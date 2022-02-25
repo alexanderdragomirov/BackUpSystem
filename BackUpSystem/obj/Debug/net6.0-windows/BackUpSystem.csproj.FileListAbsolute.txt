@@ -1,0 +1,17 @@
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\bin\Debug\net6.0-windows\BackUpSystem.exe
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\bin\Debug\net6.0-windows\BackUpSystem.deps.json
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\bin\Debug\net6.0-windows\BackUpSystem.runtimeconfig.json
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\bin\Debug\net6.0-windows\BackUpSystem.dll
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\bin\Debug\net6.0-windows\ref\BackUpSystem.dll
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\bin\Debug\net6.0-windows\BackUpSystem.pdb
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.csproj.AssemblyReference.cache
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.BackUpSystem.resources
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.csproj.GenerateResource.cache
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.AssemblyInfoInputs.cache
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.AssemblyInfo.cs
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.csproj.CoreCompileInputs.cache
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.dll
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\ref\BackUpSystem.dll
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.pdb
+D:\C# Projects\Tasks\BackUpSystem\BackUpSystem\obj\Debug\net6.0-windows\BackUpSystem.genruntimeconfig.cache
