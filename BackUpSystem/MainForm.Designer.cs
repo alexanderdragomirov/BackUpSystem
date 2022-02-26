@@ -32,6 +32,8 @@
             this.PathFolderTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Start_Button = new System.Windows.Forms.Button();
+            this.PathBackUpFolderTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.file_watch)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@
             // Start_Button
             // 
             this.Start_Button.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Start_Button.Location = new System.Drawing.Point(266, 114);
+            this.Start_Button.Location = new System.Drawing.Point(251, 170);
             this.Start_Button.Name = "Start_Button";
             this.Start_Button.Size = new System.Drawing.Size(151, 49);
             this.Start_Button.TabIndex = 2;
@@ -74,19 +76,38 @@
             this.Start_Button.UseVisualStyleBackColor = false;
             this.Start_Button.Click += new System.EventHandler(this.Start_Button_Click);
             // 
+            // PathBackUpFolderTextBox
+            // 
+            this.PathBackUpFolderTextBox.Location = new System.Drawing.Point(127, 113);
+            this.PathBackUpFolderTextBox.Name = "PathBackUpFolderTextBox";
+            this.PathBackUpFolderTextBox.Size = new System.Drawing.Size(470, 27);
+            this.PathBackUpFolderTextBox.TabIndex = 3;
+            this.PathBackUpFolderTextBox.TextChanged += new System.EventHandler(this.PathBackUpFolderTextBox_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 40);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Путь к папке\r\n BackUp";
+            // 
             // BackUpSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(667, 175);
+            this.ClientSize = new System.Drawing.Size(651, 233);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.PathBackUpFolderTextBox);
             this.Controls.Add(this.Start_Button);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PathFolderTextBox);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "BackUpSystem";
             this.Text = "BackUpSystem";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.BackUpSystem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.file_watch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -99,5 +120,7 @@
         private TextBox PathFolderTextBox;
         private Button Start_Button;
         private Label label1;
+        private Label label2;
+        private TextBox PathBackUpFolderTextBox;
     }
 }

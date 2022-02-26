@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace BackUpSystem
 {
     public partial class BackUpSystem : Form
@@ -9,7 +11,7 @@ namespace BackUpSystem
             InitializeComponent();
         }
 
-        public void Form1_Load(object sender, EventArgs e)
+        public void BackUpSystem_Load(object sender, EventArgs e)
         {
 
         }
@@ -17,7 +19,7 @@ namespace BackUpSystem
         public void File_watch_Changed(object sender, FileSystemEventArgs e)
         {
             string change = $"{changeCount}_";
-            string path = @"C:\\Users\\Alexandr\\Desktop\\BackUpFolder\\" + change + e.Name;
+            string path = PathBackUpFolderTextBox.Text + "\\" + change + e.Name;
             File.Copy(e.FullPath, path, false);
             changeCount++;
         }
@@ -34,16 +36,16 @@ namespace BackUpSystem
 
         public void File_watch_Deleted(object sender, FileSystemEventArgs e)
         {
-            MessageBox.Show("Файл удалён", "Back Up System", 
+            MessageBox.Show("Файл удалён", "Back Up System",
                MessageBoxButtons.OK,
-               MessageBoxIcon.Information, 
+               MessageBoxIcon.Information,
                MessageBoxDefaultButton.Button1,
                MessageBoxOptions.ServiceNotification);
         }
 
         private void File_watch_Renamed(object sender, RenamedEventArgs e)
         {
-            string path = @"C:\\Users\\Alexandr\\Desktop\\BackUpFolder\\" + e.Name;
+            string path = PathBackUpFolderTextBox.Text + e.Name;
             File.Copy(e.FullPath, path, true);
 
         }
@@ -54,7 +56,7 @@ namespace BackUpSystem
             DialogResult result = MessageBox.Show(
                 "Начали следить за вашей папкой",
                 "Успешно",
-                MessageBoxButtons.OK, 
+                MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             if (result == DialogResult.OK)
             {
@@ -67,7 +69,19 @@ namespace BackUpSystem
             char temp = '"';
             if (PathFolderTextBox.Text.Contains(temp))
             {
-                MessageBox.Show("Пишите путь к папке без \" (ковычек) ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Regex regex = new($"{temp}");
+                PathFolderTextBox.Text = regex.Replace(PathFolderTextBox.Text, "");
+            }
+
+        }
+
+        private void PathBackUpFolderTextBox_TextChanged(object sender, EventArgs e)
+        {
+            char temp = '"';
+            if (PathBackUpFolderTextBox.Text.Contains(temp))
+            {
+                Regex regex = new($"{temp}");
+                PathBackUpFolderTextBox.Text = regex.Replace(PathBackUpFolderTextBox.Text, "");
 
             }
         }
